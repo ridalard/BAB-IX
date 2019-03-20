@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> 
+<body>
+
+<p>How to acces nested JSON object.</p>
+
+<p id="demo"></p>
+<script>
+	var myObj = {
+		"name" :"RidalArd",
+		"age" :22,
+		"cars" : {
+			"car1":"FORD",
+			"car2":"BMW",
+			"car3":"FIAT"
+		}
+	}
+	document.getElementById("demo").innerHTML += myObj.cars.car2 + "<br>";
+	document.getElementById("demo").innerHTML += myObj.cars.["car2"];
+</script>
+
+</body>
+</html>
